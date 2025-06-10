@@ -1,0 +1,604 @@
+:root {
+  --black: #222222;
+  --white: rgb(255,255,255);
+  --gray: #55565A;
+  --light-gray: #D6D6D6;
+  --light-brown: #D5C9BE;
+  --night-brown: #282829;
+  --body: #EFCFAD;
+  --brown: #A4907D;
+  --dark-gray: #55565A;
+  --dark-green: #38535D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prata', serif;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 4rem;
+  position: fixed;
+  gap: 3rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-right: 50rem;
+  width: 100%;
+}
+
+.main_btn, .btn, .btn_mobile {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: var(--white);
+}
+
+.main_btn {
+  font-size: 2rem;
+  margin-right: 6rem;
+}
+
+.main_btn:hover, .btn:hover, .btn_mobile:hover {
+  color: var(--dark-gray);
+  transition: color 0.3s ease;
+}
+
+.btn_mobile {
+  display: none;
+}
+
+.container_face {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.front_image {
+  width: 763px;
+  height: 950px;
+}
+
+.content {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+  margin-left: 4rem;
+}
+
+.h1 {
+  color: var(--white);
+  font-size: 5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 3rem;
+  gap: 1rem;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  font-size: 1.4rem;
+}
+
+li::before {
+  content: '';
+  position: absolute;
+  left: -3rem;
+  top: 0.1rem;
+  width: 28px;
+  height: 28px;
+  background-image: url('./assets/mark1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.shop_button {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 0.3rem;
+  border: none;
+  width: 12rem;
+  height: 4rem;
+  font-family: 'Arial';
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.shop_button:hover {
+  background-color: var(--light-gray);
+  transition: background-color 0.3s ease;
+}
+
+.container_success {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--night-brown);
+  padding-top: 4rem;
+  width: 100%;
+}
+
+.content_success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  max-width: 40rem;
+  color: var(--white);
+}
+
+.success_image1 {
+  height: 720px;
+  width: 500px;
+}
+
+.success_image2 {
+  height: 720px;
+  width: 550px;
+}
+
+.success_list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 3rem;
+  margin: 0;
+  gap: 4rem;
+  font-size: 24px;
+}
+
+.success_list li {
+  display: block;
+  position: relative;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.success_list li::before {
+  content: '';
+  position: absolute;
+  left: -3rem;
+  top: 1rem;
+  width: 28px;
+  height: 28px;
+  background-image: url('./assets/mark2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.shop_button_success {
+  cursor: pointer;
+  background-color: var(--white);
+  margin-top: 2rem;
+  margin-bottom: 0.1rem;
+  color: var(--black);
+  border-radius: 0.3rem;
+  border: none;
+  width: 100%;
+  height: 4rem;
+  font-family: 'Arial';
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.shop_button_success:hover {
+  background-color: var(--light-gray);
+  transition: background-color 0.3s ease;
+}
+
+
+.container_request {
+  padding-top: 4rem;
+  background-color: var(--night-brown);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.request_menu {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--white);
+  color: var(--black);
+  margin-left: 9rem;
+  margin-right: 9rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.content_request {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+.heading {
+  color: var(--dark-green);
+  font-size: 54px;
+  margin-bottom: 2rem;
+}
+
+.request_input {
+  height: 50px;
+  width: 650px;
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+  border: 1.5px solid var(--light-gray);
+  box-sizing: border-box;
+}
+
+.request_input:focus {
+  outline: none;
+  border-color: var(--black);
+}
+
+.request_accept {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  border-radius: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.request_btn {
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--white);
+  border: 1.5px solid var(--dark-green);
+  background-size: cover;
+  background-position: center;
+}
+
+.clicked {
+  background-image: url('./assets/check.png');
+  background-size: 130%;
+}
+
+.accept_text {
+  font-size: 14px;
+  font-family: 'Arial';
+}
+
+.request_submit {
+  cursor: pointer;
+  margin-top: 1rem;
+  color: var(--white);
+  font-family: 'Arial';
+  font-weight: 600;
+  background-color: var(--night-brown);
+  border: none;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.submit_image {
+  width: 645px;
+  height: 550px;
+}
+
+.pre-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  border-top: 1px solid var(--light-brown);
+  border-bottom: 1px solid var(--light-brown);
+}
+
+.pre-end_content {
+  cursor: pointer;
+  color: var(--white);
+  background: none;
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pre-end_content:hover {
+  color: var(--dark-gray);
+  transition: color 0.3s ease;
+}
+
+.ending {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  width: 100%;
+}
+
+.h2 {
+  font-size: 1.7rem;
+}
+
+.ending_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.terms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.ending_content {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: 'Arial';
+  color: white;
+}
+
+.ending_content:hover {
+  color: var(--dark-gray);
+  transition: color 0.3s ease;
+}
+
+.ending_inst, .ending_fb, .ending_yt, .ending_tg {
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.SocialPic {
+  width: 2rem;
+  height: 2rem;
+  transition: background-color 0.2s ease;
+}
+
+.SocialPic:hover {
+  filter: brightness(1.2);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+  }
+
+  body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .btn {
+      display: none;
+  }
+
+  .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      padding-left: 2rem;
+  }
+
+  .btn_mobile {
+      display: flex;
+  }
+
+  .main_btn {
+      font-size: 1.5rem;
+  }
+
+  .front_image {
+      display: none;
+  }
+
+  .content {
+      padding: 1rem;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      padding-top: 4rem;
+      gap: 2rem;
+      padding-bottom: 4rem;
+  }
+
+  li {
+      font-size: 1.2rem;
+  }
+
+  li::before {
+      content: '';
+      position: absolute;
+      left: -3rem;
+      top: 0rem;
+      width: 28px;
+      height: 28px;
+      background-image: url('./assets/mark1.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+  }
+
+  .h1 {
+      font-size: 2rem;
+  }
+
+  .shop_button {
+      display: none;
+  }
+
+  .front_image {
+      display: none;
+  }
+
+  .container_success {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 2rem;
+  }
+
+  .content_success {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .success_list {
+      display: flex;
+      gap: 2rem;
+  }
+
+  .success_list li {
+      font-size: 1.3rem;
+  }
+
+  .success_image1 {
+      display: none;
+  }
+
+  .success_image2 {
+     display: none;
+  }
+
+  .container_request {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  .request_menu {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      border-radius: 0;
+  }
+
+  .content_request {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      margin: 0;
+  }
+
+  .submit_image {
+      display: none;
+  }
+
+  .heading {
+      font-size: 2rem;
+  }
+
+  .request_input {
+      height: 3rem;
+      width: 100%;
+  }
+
+  .request_submit {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+
+  .pre-end {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+      width: 90%;
+  }
+
+  .ending {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+  }
+
+  .ending_menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 5rem;
+  }
+
+  .terms {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+  }
+
+  .h2 {
+      font-size: 1rem;
+      margin-left: 2rem;
+  }
+
+  .ending_inst, .ending_fb, .ending_yt, .ending_tg {
+      width: 1.3rem;
+      height: 1.3rem;
+  }
+
+  .buttons {
+      margin-right: 2rem;
+  }
+
+}
