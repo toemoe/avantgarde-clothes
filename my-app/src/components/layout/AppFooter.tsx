@@ -31,7 +31,7 @@ export default function AppFooter() {
           </div>
         </div>
         <div className="terms">
-          <button className="ending_content">© 2025, Copyright.</button>
+          <p className="ending_copyright">© 2025, Copyright.</p>
           <button className="ending_content">Privacy policy</button>
           <button className="ending_content">Terms of Use</button>
         </div>

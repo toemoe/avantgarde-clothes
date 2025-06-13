@@ -2,18 +2,20 @@ import back1 from '../../assets/back1.jpg';
 import back2 from '../../assets/back2.jpeg';
 import back5 from '../../assets/back5.png';
 import '../../App.css';
+import OrderButton from '../OrderButton';
+import OrderMainButton from '../OrderMainButton';
 
 export default function AppMain() {
     return (
         <>
-        <div className="container_face">
+        <div className="container_face" id="top">
         <div className="content">
           <h1 className="h1">AVANT-GARDE CLOTHING</h1>
           <ul>
             <li>Private Entry Only</li>
             <li>We don't Sell. We Admit</li>
           </ul>
-          <button className="shop_button">ORDER</button>
+          <OrderMainButton />
         </div>
         <img src={back1} alt="front" className="front_image" />
       </div>
@@ -27,7 +29,7 @@ export default function AppMain() {
             <li>Identity is not branded—it is embodied. The silhouette speaks louder than any name ever could.</li>
             <li>Nearly every piece is produced as a unique edition or in an ultra-limited run. This is fashion for collectors, not consumers.</li>
           </ul>
-          <button className="shop_button_success">ORDER</button>
+          <OrderButton />
         </div>
         <img src={back2} alt="front" className="success_image2" />
       </div>
