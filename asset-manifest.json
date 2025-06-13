@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/avantgarde-clothes/static/css/main.efe9fddf.css",
-    "main.js": "/avantgarde-clothes/static/js/main.9d60dc5f.js",
+    "main.css": "/avantgarde-clothes/static/css/main.25901795.css",
+    "main.js": "/avantgarde-clothes/static/js/main.7ec9a54e.js",
     "static/js/453.ed3810f9.chunk.js": "/avantgarde-clothes/static/js/453.ed3810f9.chunk.js",
     "static/media/submit.png": "/avantgarde-clothes/static/media/submit.6fc408c37428e72f4057.png",
     "static/media/back5.png": "/avantgarde-clothes/static/media/back5.8d5157d4ab22b65afe62.png",
@@ -12,12 +12,12 @@
     "static/media/youtube.svg": "/avantgarde-clothes/static/media/youtube.3694dfc22ef621197aec011a9e170126.svg",
     "static/media/facebook.svg": "/avantgarde-clothes/static/media/facebook.e85b98f6292a8274b0a524602fb8975a.svg",
     "static/media/telegram.svg": "/avantgarde-clothes/static/media/telegram.3ad7f86f4f4a5c0f577c867f354d8540.svg",
-    "main.efe9fddf.css.map": "/avantgarde-clothes/static/css/main.efe9fddf.css.map",
-    "main.9d60dc5f.js.map": "/avantgarde-clothes/static/js/main.9d60dc5f.js.map",
+    "main.25901795.css.map": "/avantgarde-clothes/static/css/main.25901795.css.map",
+    "main.7ec9a54e.js.map": "/avantgarde-clothes/static/js/main.7ec9a54e.js.map",
     "453.ed3810f9.chunk.js.map": "/avantgarde-clothes/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efe9fddf.css",
-    "static/js/main.9d60dc5f.js"
+    "static/css/main.25901795.css",
+    "static/js/main.7ec9a54e.js"
   ]
 }
